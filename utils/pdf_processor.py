@@ -1,5 +1,6 @@
 from PyPDF2 import PdfReader
 import io
+import logging
 
 class PDFProcessor:
     def __init__(self):
@@ -21,6 +22,7 @@ class PDFProcessor:
             return text.strip()
             
         except Exception as e:
+            logging.error(f"PDF 處理錯誤: {str(e)}")
             raise Exception(f"PDF 處理錯誤: {str(e)}")
     
     def is_supported_file(self, filename):
