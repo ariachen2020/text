@@ -1,0 +1,9 @@
+pdf_research_assistant/
+├── app.py                 # Streamlit主應用
+├── requirements.txt       # 依賴包
+├── utils/
+│   ├── __init__.py
+│   ├── pdf_processor.py   # PDF處理核心功能
+│   ├── text_analyzer.py   # 文本分析功能
+│   └── visualizer.py      # 視覺化功能
+└── data/                  # 暫存處理後的數據 
